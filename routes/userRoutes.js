@@ -12,7 +12,7 @@ const router = express.Router();
 router.post("/signup", Signup);
 //route for login
 router.post("/login", Login);
-//request a new product 
+//request a new product
 router.post("/newProduct", validateToken, NewProduct);
 //get all the requested products by the user
 router.get("/allProducts", validateToken, AllProducts);
